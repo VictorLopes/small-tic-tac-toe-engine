@@ -15,7 +15,7 @@ or if you'd like to initialize computer as "O" instead of "X"
 
 ---
 
-### The piece are:
+### The pieces are:
 0 = Empty<br />
 1 = X<br />
 2 = O<br />
@@ -30,30 +30,30 @@ The image above can be represented as the following:
 
 1. [0, 0, 1,  0, 0, 0,  0, 0, 0]
 
-```python main.py computer=2 board=[0,0,1, 0,0,0, 0,0,0]```
+```python main.py computer=2 "board=[0,0,1, 0,0,0, 0,0,0]"```
 
 2. [2, 0, 1,  0, 0, 0,  0, 0, 0]
 
-```python main.py computer=2 board=[2,0,1, 0,0,0, 0,0,0]```
+```python main.py computer=2 "board=[2,0,1, 0,0,0, 0,0,0]"```
 
 3. [2, 0, 1,  0, 0, 0,  1, 0, 0]
 
-```python main.py computer=2 board=[2,0,1, 0,0,0, 1,0,0]```
+```python main.py computer=2 "board=[2,0,1, 0,0,0, 1,0,0]"```
 
 4. [2, 0, 1,  0, 2, 0,  1, 0, 0]
 
-```python main.py computer=2 board=[2,0,1, 0,2,0, 1,0,0]```
+```python main.py computer=2 "board=[2,0,1, 0,2,0, 1,0,0]"```
 
 5. [2, 0, 1,  0, 2, 0,  1, 0, 1]
 
-```python main.py computer=2 board=[2,0,1, 0,2,0, 1,0,1]```
+```python main.py computer=2 "board=[2,0,1, 0,2,0, 1,0,1]"```
 
 6. [2, 0, 1,  0, 2, 2,  1, 0, 1]
 
-```python main.py computer=2 board=[2,0,1, 0,2,2, 1,0,1]```
+```python main.py computer=2 "board=[2,0,1, 0,2,2, 1,0,1]"```
 
 7. [2, 0, 1,  0, 2, 2,  1, 1, 1]
 
-```python main.py computer=2 board=[2,0,1, 0,2,2, 1,1,1]```
+```python main.py computer=2 "board=[2,0,1, 0,2,2, 1,1,1]"```
 
 ### ```result=YOU WIN! board=[2, 0, 1, 0, 2, 2, 1, 1, 1]```
