@@ -1,6 +1,6 @@
 # small-tic-tac-toe-engine
 
-This is a small Tic-Tac-Toe engine a build for learning purpose
+This is a small Tic-Tac-Toe engine I built for learning purpose
 
 ## How this works?
 
