@@ -13,13 +13,13 @@ class IA:
         win_for_o = self.check_win(root.get_board(), 2)
 
         if (win_for_x and root.get_turn() == 1) or (win_for_o and root.get_turn() == 2):
-            root.set_point(1)
+            root.set_point(-3)
             return
         elif (win_for_o and root.get_turn() == 1) or (win_for_x and root.get_turn() == 2):
-            root.set_point(-1)
+            root.set_point(2)
             return
         else:
-            root.set_point(0)
+            root.set_point(1)
 
         next_children = root.calc_next()
         for child in next_children:
@@ -29,10 +29,10 @@ class IA:
         if level == 0:
             self.calc_points()
 
-    def calc_points(self, node = None):
+    def calc_points(self, node = None, last=False):
         root = self.__node if node is None else node
         children = root.get_children()
-        if len(children) > 0:
+        if len(children) > 0 and not last:
             for child in children:
                 child: Node = child
                 self.calc_points(child)
@@ -40,6 +40,7 @@ class IA:
             parent: Node = root.get_parent()
             if parent:
                 parent.set_point(parent.get_point() + root.get_point())
+                self.calc_points(parent, True)
 
 
 
